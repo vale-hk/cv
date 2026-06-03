@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Valeska Álvarez Romero | Fonoaudióloga</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
+          rel="stylesheet">
+    <!-- Metropolis is requested in config, using a similar high-end geometric sans-serif as fallback for local Metropolis -->
+    <link href="https://fonts.cdnfonts.com/css/metropolis" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c2c8bf",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#85a787",
+                        "on-secondary-fixed-variant": "#504700",
+                        "inverse-surface": "#2f3131",
+                        "on-surface": "#1a1c1c",
+                        "secondary": "#a855f7",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-bright": "#f9f9f9",
+                        "background": "#f9f9f9",
+                        "primary-fixed": "#c8ebca",
+                        "secondary-fixed-dim": "#dac83f",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "on-error": "#ffffff",
+                        "primary": "#7c3aed",
+                        "primary-container": "#86a789",
+                        "tertiary": "#466649",
+                        "inverse-primary": "#adcfaf",
+                        "on-tertiary-fixed-variant": "#2f4e33",
+                        "on-secondary-fixed": "#201c00",
+                        "surface-tint": "#47664b",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-secondary-container": "#6e6300",
+                        "secondary-fixed": "#f7e459",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#c8ecc8",
+                        "on-primary-container": "#1f3c25",
+                        "surface-variant": "#e2e2e2",
+                        "on-primary-fixed": "#03210c",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#304d35",
+                        "on-tertiary-fixed": "#03210b",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#1e3c23",
+                        "primary-fixed-dim": "#adcfaf",
+                        "surface-container": "#eeeeee",
+                        "outline": "#737971",
+                        "surface-dim": "#dadada",
+                        "surface": "#f9f9f9",
+                        "on-surface-variant": "#424842",
+                        "tertiary-fixed-dim": "#acd0ad",
+                        "secondary-container": "#f4e256",
+                        "surface-container-low": "#f3f3f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "80px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Metropolis", "Century Gothic", "sans-serif"],
+                        "label-sm": ["Metropolis", "Century Gothic", "sans-serif"],
+                        "headline-lg": ["Metropolis", "Century Gothic", "sans-serif"],
+                        "accent-italic": ["Playfair Display", "serif"],
+                        "headline-md": ["Metropolis", "Century Gothic", "sans-serif"],
+                        "body-lg": ["Metropolis", "Century Gothic", "sans-serif"],
+                        "headline-lg-mobile": ["Metropolis", "Century Gothic", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "accent-italic": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #000000 0%, #c084fc 100%);
+            background-attachment: fixed;
+            color: #1a1c1c;
+            overflow-x: hidden;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(71, 102, 75, 0.15);
+        }
+
+        .hero-gradient-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(192, 132, 252, 0.4) 100%);
+        }
+
+        .striking-border-left {
+            border-left: 4px solid #47664b;
+        }
+
+        section {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(192, 132, 252, 0.1) 100%);
+        }
+
+        #inicio {
+            background: transparent;
+        }
+    </style>
+    <style>
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .notebook-cursor {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            font-size: 2rem;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.5);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            animation: notebookFade 1.2s ease-out forwards;
+        }
+
+        @keyframes notebookFade {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.5);
+            }
+            20% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+            70% {
+                opacity: 0.8;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.8);
+            }
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-surface-container-high/80 backdrop-blur-md border-b border-outline-variant/30">
+    <div class="max-w-container-max mx-auto px-6 md:px-margin-desktop flex justify-between items-center h-20">
+        <div class="flex items-center gap-4">
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-primary border-b-2 border-primary pb-1 font-semibold font-body-md text-body-md"
+               href="#inicio">Inicio</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors pb-1 font-body-md text-body-md"
+               href="#quien-soy">Quién Soy</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors pb-1 font-body-md text-body-md"
+               href="#formacion">Formación</a>
+            <a class="bg-primary text-on-primary px-6 py-2 rounded-full hover:opacity-90 transition-all font-body-md text-body-md shadow-md active:scale-95"
+               href="#contacto">Agendar Cita</a>
+        </div>
+        <!-- Mobile Menu Toggle (Simplified) -->
+        <button class="md:hidden text-primary">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+</nav>
+<main>
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-20 flex items-center relative overflow-hidden" id="inicio">
+        <!-- Background Overlay for Hero readability -->
+        <div class="absolute inset-0 hero-gradient-overlay -z-10"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-secondary-fixed rounded-full blur-[120px] opacity-40"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-primary-fixed rounded-full blur-[120px] opacity-40"></div>
+        <div class="max-w-container-max mx-auto px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+            <div class="lg:col-span-7 space-y-8 py-12">
+                <div class="inline-block px-4 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary font-label-sm text-label-sm uppercase tracking-widest">
+                </div>
+                <h1 class="font-accent-italic italic font-normal text-3xl md:text-5xl lg:text-6xl leading-tight text-white text-center lg:text-left whitespace-nowrap">
+                    Valeska Álvarez Romero
+                </h1>
+                </a>
+            </div>
+        </div>
+        <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative group">
+                <div class="absolute -inset-4 bg-gradient-to-tr from-primary to-secondary-fixed opacity-40 blur-2xl group-hover:opacity-50 transition-opacity"></div>
+                <img alt="Comunicar es un derecho, accionar una responsabilidad"
+                     class="relative w-full max-w-[580px] md:max-w-[640px] lg:max-w-[700px] rounded-2xl shadow-2xl object-cover animate-float"
+                     src="static/img/IMG.png">
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- Quién Soy Section -->
+    <section class="py-24 border-y border-white/10" id="quien-soy">
+        <div class="max-w-container-max mx-auto px-6 md:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative">
+                        <img alt="Professional Portrait" class="w-full h-full object-cover" src="static/img/foto1.jpg">
+                    </div>
+                    <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-secondary-fixed/30 rounded-full blur-3xl -z-10"></div>
+                </div>
+                <div class="space-y-6 glass-card p-10 rounded-3xl transition-all duration-700 opacity-100 translate-y-0">
+                    <span class="text-primary font-bold tracking-widest font-label-sm text-label-sm uppercase">Perfil Profesional</span>
+                    <h2 class="font-headline-md text-headline-md"><strong>Fullstack JavaScript Developer</strong></h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed text-justify">
+                    <p class="text-justify">Soy una <strong>Fullstack Developer</strong> en formación, <strong>Fonoaudióloga</strong> de
+                        profesión con un <strong>Magíster en Intervención Social y Desarrollo Humano</strong>. Me
+                        especializo en
+                        desarrollo de aplicaciones fullstack en
+                        lenguaje <em>JavaScript</em>. Interesada en costruir soluciones digitales centradas en las
+                        personas.
+                        Tengo habilidades de comunicación, análisis y aprendizaje contínuo. Actualmente me sigo
+                        perfeccionando en el<strong> Bootcamp JavaScript Trainee </strong>en Talento Digital buscando
+                        fusionar mis conocimientos del área de la salud y el área social con la tecnología para crear
+                        herramientas más accesibles e innovadoras.
+                    </p>
+                    <div class="pt-6 border-t border-primary/20 grid grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-primary">Enfoque Humano</h4>
+                            <p class="text-sm text-on-surface-variant text-justify">Intervención centrada en la persona y su
+                                entorno.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">Innovación</h4>
+                            <p class="text-sm text-on-surface-variant text-justify">Fusión de salud social y herramientas
+                                tecnológicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Formación y Experiencia Section -->
+    <section class="py-24 border-b border-white/10" id="formacion">
+        <div class="max-w-container-max mx-auto px-6 md:px-margin-desktop">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="font-headline-md text-headline-md text-white"><strong>Trayectoria & Conocimiento</strong>
+                </h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant text-white text-justify">Un camino de aprendizaje
+                    continuo para un
+                    servicio de excelencia.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-min">
+                <!-- Académica -->
+                <div class="md:col-span-5 glass-card p-8 rounded-2xl striking-border-left flex flex-col justify-between shadow-lg transition-all duration-700 opacity-100 translate-y-0">
+                    <div>
+                        <h3 class="font-headline-md text-2xl mb-8 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary">school</span>
+                            Formación Académica
+                        </h3>
+                        <ul class="space-y-8">
+                            <li class="group">
+                                <div class="text-primary font-bold text-sm uppercase tracking-tighter mb-1">Postgrado
+                                </div>
+                                <p class="font-body-lg font-bold">Magíster en Intervención y Desarrollo Humano</p>
+                                <p class="text-on-surface-variant">Universidad Central de Chile</p>
+                            </li>
+                            <li class="group">
+                                <div class="text-primary font-bold text-sm uppercase tracking-tighter mb-1">Pregrado
+                                </div>
+                                <p class="font-body-lg font-bold ">Fonoaudióloga</p>
+                                <p class="text-on-surface-variant">Universidad San Sebastián</p>
+                            </li>
+                            <li class="group">
+                                <div class="text-secondary font-bold text-sm uppercase tracking-tighter mb-1">
+                                    Actualidad
+                                </div>
+                                <p class="font-body-lg font-bold flex items-center gap-2">
+                                    Fullstack JavaScript Bootcamp
+                                    <span class="w-2 h-2 bg-secondary animate-pulse rounded-full"></span>
+                                </p>
+                                <p class="text-on-surface-variant">Formación Tecnológica</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experiencia -->
+                <div class="md:col-span-7 space-y-6">
+                    <div class="glass-card p-8 rounded-2xl border border-white/20 shadow-md hover:shadow-lg transition-shadow transition-all duration-700 opacity-100 translate-y-0">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                                    <span class="material-symbols-outlined">medical_services</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Profesional Lista de espera No GES</h4>
+                                    <p class="text-sm text-on-surface-variant ">CRS Hospital Provincia Cordillera</p>
+                                    <p class="text-justify">2025 <br>He sido profesional trabajando el área de gestión de salud pública y
+                                        también
+                                        participante en el comité de trabajo territorial.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl border border-white/20 shadow-md hover:shadow-lg transition-shadow transition-all duration-700 opacity-100 translate-y-0">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-secondary">
+                                    <span class="material-symbols-outlined">volunteer_activism</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Fonoaudióloga</h4>
+                                    <p class="text-sm text-on-surface-variant">Fundación Nuestra Kasa</p>
+                                    <p class="card-text text-justify">2022 - 2024<br> He sido profesional en una fundación para
+                                        adultos
+                                        con discapacidad intelectual. He trabajado fomentando la comunicación, la
+                                        deglución, la vozy en especial <em>el derecho a la autonomía y la insclusión
+                                            laboral</em>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="glass-card p-6 rounded-2xl border border-white/20 shadow-md transition-all duration-700 opacity-100 translate-y-0">
+                            <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary mb-3">
+                                <span class="material-symbols-outlined">school</span>
+                            </div>
+                            <h4 class="font-bold mb-2">Tutora Clínica</h4>
+                            <p class="text-sm text-on-surface-variant">Universidad Autónoma</p>
+                            <p class="text-justify">2024- 2025 <br> He sido Docente clínica a cargo de estudiantes de 4to año de la
+                                carrera
+                                de
+                                Fonoaudiología
+                                área adultos de la <em>Universidad Autónoma de Chile</em></p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl border border-white/20 shadow-md transition-all duration-700 opacity-100 translate-y-0">
+                            <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary mb-3">
+                                <span class="material-symbols-outlined">groups</span>
+                            </div>
+                            <h4 class="font-bold mb-2">Talleres Comunitarios</h4>
+                            <p class="text-sm text-on-surface-variant">Universidad San Sebastián</p>
+                            <p class="text-justify">2023-2025 <br> He sido monitora de talleres comunitarios de estimulación cognitiva en
+                                diferentes lugares del país, estando a cargo de estudiantes de la carrera de
+                                fonoaudiología, ejecutando
+                                los talleres y promocionando el bienestar de salud integral por la institución <em>Universidad
+                                    San Sebastián</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Habilidades Section -->
+    <section class="py-24 border-y border-white/10" id="habilidades">
+        <div class="max-w-container-max mx-auto px-6 md:px-margin-desktop">
+            <div class="text-center mb-16">
+                <h2 class="font-headline-md text-headline-md mt-2 text-white"><strong>Habilidades Técnicas &
+                    Relacionales</strong></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+                <!-- Técnicas -->
+                <div class="glass-card p-10 rounded-3xl border border-white/20 shadow-md">
+                    <h3 class="font-bold text-xl text-primary mb-6 uppercase tracking-widest text-sm">Técnicas</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm border border-primary/20">HTML</span>
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm border border-primary/20">CSS</span>
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm border border-primary/20">JavaScript</span>
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm border border-primary/20">GitHub</span>
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm border border-primary/20">Node.js</span>
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm border border-primary/20">Responsive Design</span>
+                    </div>
+                </div>
+
+                <!-- Relacionales -->
+                <div class="glass-card p-10 rounded-3xl border border-white/20 shadow-md">
+                    <h3 class="font-bold text-xl text-primary mb-6 uppercase tracking-widest text-sm">Relacionales</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-on-surface-variant">
+                            <span class="w-2 h-2 rounded-full bg-primary flex-shrink-0"></span>Comunicación efectiva
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant">
+                            <span class="w-2 h-2 rounded-full bg-primary flex-shrink-0"></span>Resolución de problemas
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant">
+                            <span class="w-2 h-2 rounded-full bg-primary flex-shrink-0"></span>Liderazgo
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant">
+                            <span class="w-2 h-2 rounded-full bg-primary flex-shrink-0"></span>Adaptabilidad
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant">
+                            <span class="w-2 h-2 rounded-full bg-primary flex-shrink-0"></span>Enfoque centrado en las
+                            personas
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant">
+                            <span class="w-2 h-2 rounded-full bg-primary flex-shrink-0"></span>Trabajo
+                            Interdisciplinario
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant">
+                            <span class="w-2 h-2 rounded-full bg-primary flex-shrink-0"></span>Aprendizaje contínuo
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Idiomas -->
+    <div class="max-w-container-max mx-auto px-6 md:px-margin-desktop mt-16">
+        <span class="text-primary font-bold tracking-widest font-label-sm text-label-sm uppercase">Idiomas</span>
+        <div class="overflow-x-auto glass-card rounded-2xl border border-white/20 shadow-md p-6">
+            <table class="w-full text-sm">
+                <thead>
+                <tr class="border-b border-primary/20">
+                    <th class="text-left py-3 px-4 text-primary font-bold uppercase text-xs tracking-widest">Idioma</th>
+                    <th class="text-center py-3 px-4 text-primary font-bold uppercase text-xs tracking-widest">Lectura
+                    </th>
+                    <th class="text-center py-3 px-4 text-primary font-bold uppercase text-xs tracking-widest">
+                        Escritura
+                    </th>
+                    <th class="text-center py-3 px-4 text-primary font-bold uppercase text-xs tracking-widest">
+                        Conversación
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="border-b border-primary/10 hover:bg-primary/5 transition-colors">
+                    <td class="py-3 px-4 font-bold">Español</td>
+                    <td class="py-3 px-4 text-center">Nativo</td>
+                    <td class="py-3 px-4 text-center">Nativo</td>
+                    <td class="py-3 px-4 text-center">Nativo</td>
+                </tr>
+                <tr class="border-b border-primary/10 hover:bg-primary/5 transition-colors">
+                    <td class="py-3 px-4 font-bold">Inglés</td>
+                    <td class="py-3 px-4 text-center">Básico</td>
+                    <td class="py-3 px-4 text-center">Básico</td>
+                    <td class="py-3 px-4 text-center">Básico</td>
+                </tr>
+                <tr class="hover:bg-primary/5 transition-colors">
+                    <td class="py-3 px-4 font-bold">Lengua de Señas</td>
+                    <td class="py-3 px-4 text-center">Básico</td>
+                    <td class="py-3 px-4 text-center">Básico</td>
+                    <td class="py-3 px-4 text-center">Básico</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Portfolio Card 1 -->
+
+    </section>
+    <!-- Contact Section -->
+    <section class="py-24" id="contacto">
+        <div class="max-w-container-max mx-auto px-6 md:px-margin-desktop">
+            <div class="glass-card rounded-[2rem] overflow-hidden shadow-2xl flex flex-col md:flex-row border-white/50 transition-all duration-700 opacity-100 translate-y-0">
+                <div class="md:w-1/2 p-12 bg-primary text-on-primary">
+                    <h2 class="font-headline-md text-headline-md mb-8">¿Hablamos?</h2>
+                    <p class="font-body-lg text-body-lg mb-12 opacity-90">Estoy disponible para consultas,
+                        asesorías y futuros proyectos de impacto social. Juntos podemos accionar el cambio.</p>
+                    <div class="space-y-8">
+                        <a class="flex items-center gap-4 hover:translate-x-2 transition-transform"
+                           href="tel:+56931777952">
+                            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold opacity-70 uppercase">Llamar o WhatsApp</p>
+                                <p class="text-xl">+56 9 3177 7952</p>
+                            </div>
+                        </a>
+                        <a class="flex items-center gap-4 hover:translate-x-2 transition-transform"
+                           href="https://instagram.com/Amayakster" target="_blank">
+                            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+                                <span class="material-symbols-outlined">share</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold opacity-70 uppercase">Instagram</p>
+                                <p class="text-xl">@Amayakster</p>
+                            </div>
+                            <a class="flex items-center gap-4 hover:translate-x-2 transition-transform"
+                               href="https://www.linkedin.com/in/valeska-%C3%A1lvarez-romero-26b18926a/"
+                               target="_blank">
+                                <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+                                    <span class="material-symbols-outlined">work</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold opacity-70 uppercase">LinkedIn</p>
+                                    <p class="text-xl">Valeska Álvarez Romero</p>
+                                </div>
+                            </a>
+                            <a class="flex items-center gap-4 hover:translate-x-2 transition-transform"
+                               href="https://github.com/vale-hk" target="_blank">
+                                <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+                                    <span class="material-symbols-outlined">code</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold opacity-70 uppercase">GitHub</p>
+                                    <p class="text-xl">vale-hk</p>
+                                </div>
+                            </a>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 p-12 bg-white/80">
+                    <form class="space-y-6">
+                        <div class="space-y-1">
+                            <label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Nombre
+                                Completo</label>
+                            <input class="w-full border-0 border-b-2 border-primary/30 focus:ring-0 focus:border-primary transition-colors py-3 px-0 bg-transparent"
+                                   placeholder="Ej. Juan Pérez" type="text">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Correo
+                                Electrónico</label>
+                            <input class="w-full border-0 border-b-2 border-primary/30 focus:ring-0 focus:border-primary transition-colors py-3 px-0 bg-transparent"
+                                   placeholder="ejemplo@correo.com" type="email">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Mensaje o
+                                Consulta</label>
+                            <textarea
+                                    class="w-full border-0 border-b-2 border-primary/30 focus:ring-0 focus:border-primary transition-colors py-3 px-0 bg-transparent min-h-[120px]"
+                                    placeholder="Cuéntame en qué puedo ayudarte..."></textarea>
+                        </div>
+                        <button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 shadow-lg"
+                                type="submit">
+                            Enviar Mensaje
+                            <span class="material-symbols-outlined">send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Footer -->
+<footer class="bg-white/90 border-t border-primary/20 backdrop-blur-md">
+    <div class="max-w-container-max mx-auto px-6 md:px-margin-desktop py-16">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <img alt="Logo" class="h-12 w-12"
+                         src="static/img/IMG.png">
+                    <span class="font-accent-italic text-accent-italic text-secondary text-2xl">Valeska Álvarez Romero</span>
+                </div>
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-12 md:gap-24">
+                <div>
+                    <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-primary">Enlaces</h5>
+                    <ul class="space-y-2">
+                        <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors text-sm"
+                                        href="#inicio">Inicio</a></li>
+                        <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors text-sm"
+                                        href="#quien-soy">Quién Soy</a></li>
+                        <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors text-sm"
+                                        href="#formacion">Formación</a></li>
+                        </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-primary">Social</h5>
+                    <ul class="space-y-2">
+                        <li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors text-sm"
+                                        href="https://github.com/vale-hk" target="_blank">GitHub</a></li>
+                        <li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors text-sm"
+                                        href="https://www.linkedin.com/in/valeska-%C3%A1lvarez-romero-26b18926a/"
+                                        target="_blan">LinkedIn</a></li>
+                        <li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors text-sm"
+                                        href="https://instagram.com/Amayakster" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pt-8 border-t border-primary/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-on-surface-variant">
+            <p class="">© 2026 Valeska Álvarez Romero. Fullstack Developer. Fonoaudióloga. Magíster en Intervención
+                Social y Desarrollo Humano.</p>
+            <div class="flex gap-6">
+                <a class="hover:text-primary underline" href="#">Privacidad</a>
+                <a class="hover:text-primary underline" href="#">Términos</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    // Simple floating animation
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Smooth reveal on scroll
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.glass-card').forEach(el => {
+        el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+        observer.observe(el);
+    });
+    // Efecto cursor notebooks con rosa
+    const heroSection = document.getElementById('inicio');
+    const emojis = ['📓', '💜', '📔', '🌷'];
+
+    heroSection.addEventListener('mousemove', (e) => {
+        if (Math.random() > 0.85) {
+            const el = document.createElement('div');
+            el.classList.add('notebook-cursor');
+            el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            el.style.left = e.clientX + 'px';
+            el.style.top  = e.clientY + 'px';
+            el.style.fontSize = (1.5 + Math.random() * 1.5) + 'rem';
+            document.body.appendChild(el);
+            setTimeout(() => el.remove(), 1200);
+        }
+    });
+</script>
+
+
+</body>
+</html>
