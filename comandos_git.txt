@@ -1,0 +1,5 @@
+git --version Muestra la versión instalada de Git ej: git --version git version 2.54.0.windows.1
+git init    Inicializa un repositorio en la carpeta actual ej: git init
+git add Agrega cambios al área de preparación (saging) ej: git add
+git commit Registra los cambios con un mensaje descriptivo ej: git commit -m "Primer commit"
+git status Muestra el estado del repositorio ej: git status
