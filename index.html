@@ -110,22 +110,27 @@
         <div class="flex items-center gap-4">
         </div>
         <div class="hidden md:flex gap-8 items-center">
+
+            <!-- Botón toggle: primero a la izquierda -->
+            <button id="theme-toggle"
+                    class="w-9 h-9 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                    style="background: rgba(255,255,255,0.15)"
+                    title="Cambiar tema">
+                <span id="theme-icon" class="material-symbols-outlined text-white" style="font-size: 20px">light_mode</span>
+            </button>
+
             <a class="text-primary border-b-2 border-primary pb-1 font-semibold font-body-md text-body-md"
                href="#inicio">Inicio</a>
             <a class="text-on-surface-variant hover:text-primary transition-colors pb-1 font-body-md text-body-md"
                href="#quien-soy">Quién Soy</a>
             <a class="text-on-surface-variant hover:text-primary transition-colors pb-1 font-body-md text-body-md"
                href="#formacion">Formación</a>
-            <!-- Botón toggle tema -->
-            <button id="theme-toggle"
-                    class="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
-                    style="background: rgba(255,255,255,0.15)"
-                    title="Cambiar tema">
-                <span id="theme-icon" class="text-xl">☀️</span>
-            </button>
-            <a class="bg-primary text-on-primary px-6 py-2 rounded-full hover:opacity-90 transition-all font-body-md text-body-md shadow-md active:scale-95"
+            <a class="px-6 py-2 rounded-full hover:opacity-90 transition-all font-body-md text-body-md shadow-md active:scale-95"
+               style="background: linear-gradient(135deg, #6b21a8, #c084fc); color: white;"
                href="#contacto">Agendar Cita</a>
         </div>
+
+
         <!-- Mobile Menu Toggle (Simplified) -->
         <div>
             <button id="boton-menu" class="md:hidden text-primary">
@@ -445,7 +450,8 @@
             <div class="glass-card rounded-[2rem] overflow-hidden shadow-2xl flex flex-col md:flex-row border-white/50 transition-all duration-700 opacity-100 translate-y-0">
 
                 <!-- Columna izquierda: datos de contacto -->
-                <div class="md:w-1/2 p-12 bg-primary text-on-primary">
+                <div class="md:w-1/2 p-12 text-white"
+                     style="background: linear-gradient(135deg, #a855f7, #e9d5ff);">
                     <h2 class="font-headline-md text-headline-md mb-8">¿Hablamos?</h2>
                     <p class="font-body-lg text-body-lg mb-12 opacity-90">Estoy disponible para consultas,
                         asesorías y futuros proyectos de impacto social. Juntos podemos accionar el cambio.</p>
@@ -529,7 +535,8 @@
                                       placeholder="Cuéntame en qué puedo ayudarte..." name="mensaje" required></textarea>
                         </div>
                         <input type="text" name="_gotcha" style="display:none">
-                        <button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 shadow-lg"
+                        <button class="w-full py-4 rounded-xl font-bold hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 shadow-lg"
+                                style="background: linear-gradient(135deg, #6b21a8, #c084fc); color: white;"
                                 type="submit">
                             Enviar Mensaje
                             <span class="material-symbols-outlined">send</span>

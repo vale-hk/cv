@@ -90,21 +90,23 @@ const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 const htmlEl = document.documentElement;
 
-// Recordar preferencia guardada
+// Recordar preferencia guardada — oscuro por defecto
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
     htmlEl.classList.add('light-mode');
-    themeIcon.textContent = '🌙';
+    themeIcon.textContent = 'dark_mode';
+} else {
+    themeIcon.textContent = 'light_mode';
 }
 
 // Cambiar tema al hacer clic
 themeToggle.addEventListener('click', function() {
     const isLight = htmlEl.classList.toggle('light-mode');
     if (isLight) {
-        themeIcon.textContent = '🌙';
+        themeIcon.textContent = 'dark_mode';
         localStorage.setItem('theme', 'light');
     } else {
-        themeIcon.textContent = '☀️';
+        themeIcon.textContent = 'light_mode';
         localStorage.setItem('theme', 'dark');
     }
 });
