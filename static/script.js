@@ -48,36 +48,39 @@ heroSection.addEventListener('mousemove', (e) => {
 });
 
 //FORMULARIO DE CONTACTO
-document.getElementById('form-contacto').addEventListener('submit', async function (e) {
+document.getElementById('form-contacto').addEventListener('submit', async function(e) {
     e.preventDefault();
     const form = e.target;
     const datos = new FormData(form);
-
-    const respuesta = await fetch(form.action, {
-        method: 'POST',
-        body: datos,
-        headers: {'Accept': 'application/json'}
-    });
-
-    if (respuesta.ok) {
-        document.getElementById('form-contacto').style.display = 'none';
-        document.getElementById('mensaje-exito').style.display = 'block';
-    } else {
-        alert('Hubo un problema al enviar. Intenta de nuevo');
+    try {
+        const respuesta = await fetch(form.action, {
+            method: 'POST',
+            body: datos,
+            headers: { 'Accept': 'application/json' }
+        });
+        console.log('Estado de respuesta:', respuesta.ok, respuesta.status);
+        if (respuesta.ok) {
+            if (respuesta.ok) {
+                window.location.href = 'gracias.html';
+            }
+        } else {
+            alert('Hubo un problema al enviar. Intenta de nuevo.');
+        }
+    } catch (error) {
+        alert('Error de conexión. Intenta de nuevo.');
     }
-};
-//MENU MÓVIL
+});
+
+// MENÚ MÓVIL
 const botonMenu = document.getElementById('boton-menu');
 const menuMovil = document.getElementById('menu-movil');
 
-// Abrir y cerrar el menú al tocar el botón
-botonMenu.addEventListener('click', function () {
+botonMenu.addEventListener('click', function() {
     menuMovil.classList.toggle('hidden');
 });
 
-// Cerrar el menú automáticamente al tocar cualquier link
-menuMovil.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
+menuMovil.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
         menuMovil.classList.add('hidden');
     });
 });

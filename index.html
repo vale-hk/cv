@@ -9,6 +9,7 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
           rel="stylesheet">
+    <link href="static/style.css" rel="stylesheet" type="text/css">
     <!-- Metropolis is requested in config, using a similar high-end geometric sans-serif as fallback for local Metropolis -->
     <link href="https://fonts.cdnfonts.com/css/metropolis" rel="stylesheet">
     <script id="tailwind-config">
@@ -27,7 +28,7 @@
                         "surface-container-high": "#e8e8e8",
                         "surface-container-highest": "#e2e2e2",
                         "surface-bright": "#f9f9f9",
-                        "background": "#f9f9f9",
+                        "background": "transparent",
                         "primary-fixed": "#c8ebca",
                         "secondary-fixed-dim": "#dac83f",
                         "on-error-container": "#93000a",
@@ -485,20 +486,20 @@
                             <label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Nombre
                                 Completo</label>
                             <input class="w-full border-0 border-b-2 border-primary/30 focus:ring-0 focus:border-primary transition-colors py-3 px-0 bg-transparent"
-                                   placeholder="Ej. Juan Pérez" type="text" name="nombre">
+                                   placeholder="Ej. Juan Pérez" type="text" name="nombre" required>
                         </div>
                         <div class="space-y-1">
                             <label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Correo
                                 Electrónico</label>
                             <input class="w-full border-0 border-b-2 border-primary/30 focus:ring-0 focus:border-primary transition-colors py-3 px-0 bg-transparent"
-                                   placeholder="ejemplo@correo.com" type="email" name="email">
+                                   placeholder="ejemplo@correo.com" type="email" name="email" required>
                         </div>
                         <div class="space-y-1">
                             <label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Mensaje o
                                 Consulta</label>
                             <textarea
                                     class="w-full border-0 border-b-2 border-primary/30 focus:ring-0 focus:border-primary transition-colors py-3 px-0 bg-transparent min-h-[120px]"
-                                    placeholder="Cuéntame en qué puedo ayudarte..." name="mensaje"></textarea>
+                                    placeholder="Cuéntame en qué puedo ayudarte..." name="mensaje"required></textarea>
                         </div>
                         <input type="hidden" name="_next" value="http://vale-hk.github.io/cv/gracias.html"/>
                         <input type="text" name="_gotcha" style="display:none">
@@ -507,8 +508,9 @@
                             Enviar Mensaje
                             <span class="material-symbols-outlined">send</span>
                         </button>
-                        <div id="mensaje-exito" style="display:none"
-                             class="text-center py-6">
+                        <div id="mensaje-exito"
+                             class="text-center py-6 mt-4"
+                             style="display:none !important">
                             <div class="text-4xl mb-3">💜</div>
                             <p class="font-bold text-purple-700 text-lg">¡Mensaje recibido!</p>
                             <p class="text-gray-600 mt-1">Te responderé a la brevedad.</p>
@@ -567,7 +569,7 @@
         </div>
     </div>
 </footer>
-
+<script src="static/script.js"></script>
 
 </body>
 </html>
