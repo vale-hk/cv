@@ -87,26 +87,50 @@ menuMovil.querySelectorAll('a').forEach(function(link) {
 
 // TOGGLE MODO CLARO / OSCURO
 const themeToggle = document.getElementById('theme-toggle');
+const themeToggleMobile = document.getElementById('theme-toggle-mobile');
 const themeIcon = document.getElementById('theme-icon');
+const themeIconMobile = document.getElementById('theme-icon-mobile');
+const themeLabelMobile = document.getElementById('theme-label-mobile');
 const htmlEl = document.documentElement;
 
-// Recordar preferencia guardada — oscuro por defecto
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'light') {
+function setLight() {
     htmlEl.classList.add('light-mode');
     themeIcon.textContent = 'dark_mode';
-} else {
-    themeIcon.textContent = 'light_mode';
+    themeIconMobile.textContent = 'dark_mode';
+    themeLabelMobile.textContent = 'Modo oscuro';
+    localStorage.setItem('theme', 'light');
 }
 
-// Cambiar tema al hacer clic
+function setDark() {
+    htmlEl.classList.remove('light-mode');
+    themeIcon.textContent = 'light_mode';
+    themeIconMobile.textContent = 'light_mode';
+    themeLabelMobile.textContent = 'Modo claro';
+    localStorage.setItem('theme', 'dark');
+}
+
+// Recordar preferencia guardada
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+    setLight();
+} else {
+    setDark();
+}
+
+// Botón desktop
 themeToggle.addEventListener('click', function() {
-    const isLight = htmlEl.classList.toggle('light-mode');
-    if (isLight) {
-        themeIcon.textContent = 'dark_mode';
-        localStorage.setItem('theme', 'light');
+    if (htmlEl.classList.contains('light-mode')) {
+        setDark();
     } else {
-        themeIcon.textContent = 'light_mode';
-        localStorage.setItem('theme', 'dark');
+        setLight();
+    }
+});
+
+// Botón móvil
+themeToggleMobile.addEventListener('click', function() {
+    if (htmlEl.classList.contains('light-mode')) {
+        setDark();
+    } else {
+        setLight();
     }
 });
