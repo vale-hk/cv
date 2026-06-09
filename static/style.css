@@ -1,3 +1,6 @@
+/* =====================
+   MODO OSCURO
+   ===================== */
 body {
     background: linear-gradient(135deg, #3b0764 0%, #6b21a8 40%, #c084fc 100%);
     background-attachment: fixed;
@@ -76,4 +79,64 @@ section {
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.8);
     }
+}
+
+/* =====================
+   MODO CLARO
+   ===================== */
+
+html.light-mode body {
+    background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%);
+    color: #1a1c1c;
+}
+
+html.light-mode nav {
+    background: rgba(237, 233, 254, 0.95) !important;
+    border-bottom: 1px solid #c4b5fd;
+}
+
+html.light-mode nav a {
+    color: #6b21a8;
+}
+
+html.light-mode nav a:hover {
+    color: #3b0764;
+}
+
+html.light-mode .glass-card {
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+    border: 1px solid #e9d5ff;
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.08);
+}
+
+html.light-mode section {
+    background: transparent !important;
+}
+
+html.light-mode #theme-toggle {
+    background: rgba(124, 58, 237, 0.1) !important;
+}
+
+html.light-mode h1,
+html.light-mode h2,
+html.light-mode h3,
+html.light-mode h4 {
+    color: #3b0764;
+}
+
+html.light-mode p {
+    color: #4c1d95;
+}
+
+html.light-mode .text-white {
+    color: #3b0764 !important;
+}
+
+html.light-mode .text-on-surface-variant {
+    color: #6b21a8 !important;
+}
+
+html.light-mode .striking-border-left {
+    border-left: 4px solid #7c3aed;
 }

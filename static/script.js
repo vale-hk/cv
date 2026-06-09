@@ -84,3 +84,27 @@ menuMovil.querySelectorAll('a').forEach(function(link) {
         menuMovil.classList.add('hidden');
     });
 });
+
+// TOGGLE MODO CLARO / OSCURO
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const htmlEl = document.documentElement;
+
+// Recordar preferencia guardada
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+    htmlEl.classList.add('light-mode');
+    themeIcon.textContent = '🌙';
+}
+
+// Cambiar tema al hacer clic
+themeToggle.addEventListener('click', function() {
+    const isLight = htmlEl.classList.toggle('light-mode');
+    if (isLight) {
+        themeIcon.textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+    } else {
+        themeIcon.textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+    }
+});
