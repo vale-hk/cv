@@ -199,11 +199,27 @@
                href="#contacto">Agendar Cita</a>
         </div>
         <!-- Mobile Menu Toggle (Simplified) -->
-        <button class="md:hidden text-primary">
-            <span class="material-symbols-outlined">menu</span>
-        </button>
+        <div>
+            <button id="boton-menu" class="md:hidden text-primary">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
     </div>
 </nav>
+<!-- Menú móvil desplegable -->
+<div id="menu-movil" class="hidden fixed top-20 left-0 w-full z-40 md:hidden"
+     style="background: rgba(0,0,0,0.95); backdrop-filter: blur(12px);">
+    <div class="flex flex-col items-center gap-6 py-10">
+        <a class="text-white text-lg font-semibold hover:text-purple-400 transition-colors"
+           href="#inicio">Inicio</a>
+        <a class="text-white text-lg font-semibold hover:text-purple-400 transition-colors"
+           href="#quien-soy">Quién Soy</a>
+        <a class="text-white text-lg font-semibold hover:text-purple-400 transition-colors"
+           href="#formacion">Formación</a>
+        <a class="bg-purple-700 text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all"
+           href="#contacto">Agendar Cita</a>
+    </div>
+</div>
 <main>
     <!-- Hero Section -->
     <section class="min-h-screen pt-20 flex items-center relative overflow-hidden" id="inicio">
@@ -246,7 +262,8 @@
                     <span class="text-primary font-bold tracking-widest font-label-sm text-label-sm uppercase">Perfil Profesional</span>
                     <h2 class="font-headline-md text-headline-md"><strong>Fullstack JavaScript Developer</strong></h2>
                     <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed text-justify">
-                    <p class="text-justify">Soy una <strong>Fullstack Developer</strong> en formación, <strong>Fonoaudióloga</strong> de
+                    <p class="text-justify">Soy una <strong>Fullstack Developer</strong> en formación, <strong>Fonoaudióloga</strong>
+                        de
                         profesión con un <strong>Magíster en Intervención Social y Desarrollo Humano</strong>. Me
                         especializo en
                         desarrollo de aplicaciones fullstack en
@@ -260,12 +277,14 @@
                     <div class="pt-6 border-t border-primary/20 grid grid-cols-2 gap-8">
                         <div>
                             <h4 class="font-bold text-primary">Enfoque Humano</h4>
-                            <p class="text-sm text-on-surface-variant text-justify">Intervención centrada en la persona y su
+                            <p class="text-sm text-on-surface-variant text-justify">Intervención centrada en la persona
+                                y su
                                 entorno.</p>
                         </div>
                         <div>
                             <h4 class="font-bold text-primary">Innovación</h4>
-                            <p class="text-sm text-on-surface-variant text-justify">Fusión de salud social y herramientas
+                            <p class="text-sm text-on-surface-variant text-justify">Fusión de salud social y
+                                herramientas
                                 tecnológicas.</p>
                         </div>
                     </div>
@@ -279,7 +298,8 @@
             <div class="text-center mb-16 space-y-4">
                 <h2 class="font-headline-md text-headline-md text-white"><strong>Trayectoria & Conocimiento</strong>
                 </h2>
-                <p class="font-body-lg text-body-lg text-on-surface-variant text-white text-center">Un camino de aprendizaje continuo para un servicio de excelencia.</p>
+                <p class="font-body-lg text-body-lg text-on-surface-variant text-white text-center">Un camino de
+                    aprendizaje continuo para un servicio de excelencia.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-min">
                 <!-- Académica -->
@@ -326,7 +346,8 @@
                                 <div>
                                     <h4 class="font-bold">Profesional Lista de espera No GES</h4>
                                     <p class="text-sm text-on-surface-variant ">CRS Hospital Provincia Cordillera</p>
-                                    <p class="text-justify">2025 <br>He sido profesional trabajando el área de gestión de salud pública y
+                                    <p class="text-justify">2025 <br>He sido profesional trabajando el área de gestión
+                                        de salud pública y
                                         también
                                         participante en el comité de trabajo territorial.</p>
                                 </div>
@@ -342,7 +363,8 @@
                                 <div>
                                     <h4 class="font-bold">Fonoaudióloga</h4>
                                     <p class="text-sm text-on-surface-variant">Fundación Nuestra Kasa</p>
-                                    <p class="card-text text-justify">2022 - 2024<br> He sido profesional en una fundación para
+                                    <p class="card-text text-justify">2022 - 2024<br> He sido profesional en una
+                                        fundación para
                                         adultos
                                         con discapacidad intelectual. He trabajado fomentando la comunicación, la
                                         deglución, la vozy en especial <em>el derecho a la autonomía y la insclusión
@@ -358,7 +380,8 @@
                             </div>
                             <h4 class="font-bold mb-2">Tutora Clínica</h4>
                             <p class="text-sm text-on-surface-variant">Universidad Autónoma</p>
-                            <p class="text-justify">2024- 2025 <br> He sido Docente clínica a cargo de estudiantes de 4to año de la
+                            <p class="text-justify">2024- 2025 <br> He sido Docente clínica a cargo de estudiantes de
+                                4to año de la
                                 carrera
                                 de
                                 Fonoaudiología
@@ -370,7 +393,8 @@
                             </div>
                             <h4 class="font-bold mb-2">Talleres Comunitarios</h4>
                             <p class="text-sm text-on-surface-variant">Universidad San Sebastián</p>
-                            <p class="text-justify">2023-2025 <br> He sido monitora de talleres comunitarios de estimulación cognitiva en
+                            <p class="text-justify">2023-2025 <br> He sido monitora de talleres comunitarios de
+                                estimulación cognitiva en
                                 diferentes lugares del país, estando a cargo de estudiantes de la carrera de
                                 fonoaudiología, ejecutando
                                 los talleres y promocionando el bienestar de salud integral por la institución <em>Universidad
@@ -536,7 +560,7 @@
                     </div>
                 </div>
                 <div class="md:w-1/2 p-12 bg-white/80">
-                    <form id="form-contacto" class="space-y-6" action="https://formspree.io/f/mgobwzvn" method="POST" _next="https://vale-hk.github.io/cv/gracias.html">
+                    <form id="form-contacto" class="space-y-6" action="https://formspree.io/f/mgobwzvn" method="POST">
                         <div class="space-y-1">
                             <label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Nombre
                                 Completo</label>
@@ -556,6 +580,7 @@
                                     class="w-full border-0 border-b-2 border-primary/30 focus:ring-0 focus:border-primary transition-colors py-3 px-0 bg-transparent min-h-[120px]"
                                     placeholder="Cuéntame en qué puedo ayudarte..." name="mensaje"></textarea>
                         </div>
+                        <input type="hidden" name="_next" value="http://vale-hk.github.io/cv/gracias.html"/>
                         <input type="text" name="_gotcha" style="display:none">
                         <button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 shadow-lg"
                                 type="submit">
@@ -666,7 +691,7 @@
             el.classList.add('notebook-cursor');
             el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
             el.style.left = e.clientX + 'px';
-            el.style.top  = e.clientY + 'px';
+            el.style.top = e.clientY + 'px';
             el.style.fontSize = (1.5 + Math.random() * 1.5) + 'rem';
             document.body.appendChild(el);
             setTimeout(() => el.remove(), 1200);
@@ -674,10 +699,8 @@
     });
 </script>
 <script>
-    const form = document.getElementById('form-contacto');
-    const mensajeExito = document.getElementById('mensaje-exito');
 
-    form.addEventListener('submit', async function(e) {
+    form.addEventListener('submit', async function (e) {
         e.preventDefault();
 
         const datos = new FormData(form);
@@ -685,13 +708,29 @@
         const respuesta = await fetch(form.action, {
             method: 'POST',
             body: datos,
-            headers: { 'Accept': 'application/json' }
+            headers: {'Accept': 'application/json'}
         });
 
         if (respuesta.ok) {
             form.style.display = 'none';
             mensajeExito.style.display = 'block';
         }
+    });
+</script>
+<script>
+    const botonMenu = document.getElementById('boton-menu');
+    const menuMovil = document.getElementById('menu-movil');
+
+    // Abrir y cerrar el menú al tocar el botón
+    botonMenu.addEventListener('click', function () {
+        menuMovil.classList.toggle('hidden');
+    });
+
+    // Cerrar el menú automáticamente al tocar cualquier link
+    menuMovil.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+            menuMovil.classList.add('hidden');
+        });
     });
 </script>
 
